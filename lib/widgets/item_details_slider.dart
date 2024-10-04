@@ -41,7 +41,7 @@ class _ItemDetailsSliderState extends State<ItemDetailsSlider> {
                     color: Colors.white24,
                     image: DecorationImage(
                       image: AssetImage(imagePath),
-                      fit: BoxFit.cover,
+                      fit: BoxFit.scaleDown,
                     ),
                   ),
                 );

@@ -49,7 +49,7 @@ class FruitCard extends StatelessWidget {
                     ),
                     image: DecorationImage(
                       image: AssetImage(fruitImg),
-                      fit: BoxFit.cover,
+                      fit: BoxFit.scaleDown,
                     ),
                   ),
                 ),

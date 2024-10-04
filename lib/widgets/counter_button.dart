@@ -31,7 +31,7 @@ class CounterButton extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                "1",
+                "4",
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 20,
