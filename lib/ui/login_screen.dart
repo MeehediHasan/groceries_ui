@@ -12,17 +12,18 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Top Image Section
             Image.asset(
               AssetPaths.loginScreenImg,
               width: double.infinity,
               height: 300,
               fit: BoxFit.cover,
             ),
+            const SizedBox(height:36,),
+
             const Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(20),
               child: Text(
-                'Get your groceries \nwith Nectar',
+                'Get your groceries  \nwith Nectar',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 28,
