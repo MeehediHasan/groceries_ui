@@ -9,18 +9,18 @@ class ExploreItemScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:SafeArea(
+      body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                SearchTextField(textEditingController: TextEditingController(), hintText: "Apple"),
-                const SizedBox(height: 16),
-                GridView.builder(
-                  shrinkWrap: true,
+          child: Column(
+            children: [
+              SearchTextField(
+                  textEditingController: TextEditingController(),
+                  hintText: "Apple"),
+              const SizedBox(height: 16),
+              Expanded(
+                child: GridView.builder(
                   padding: const EdgeInsets.all(2),
-                  scrollDirection: Axis.vertical,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     childAspectRatio: 0.75,
@@ -53,7 +53,6 @@ class ExploreItemScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          // Text Section
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
@@ -68,7 +67,7 @@ class ExploreItemScreen extends StatelessWidget {
                                     color: Colors.black,
                                   ),
                                 ),
-                                const SizedBox(height: 3), // Adjusted spacing
+                                const SizedBox(height: 3),
                                 Text(
                                   "1kilo, 10 peaces",
                                   maxLines: 1,
@@ -78,12 +77,12 @@ class ExploreItemScreen extends StatelessWidget {
                                     color: Colors.grey.shade500,
                                   ),
                                 ),
-                                const SizedBox(height: 5), // Adjusted spacing
+                                const SizedBox(height: 5),
                                 Row(
                                   crossAxisAlignment: CrossAxisAlignment.end,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
-                                    // Price
                                     const Text(
                                       '\$4.99',
                                       style: TextStyle(
@@ -92,7 +91,6 @@ class ExploreItemScreen extends StatelessWidget {
                                         fontSize: 22,
                                       ),
                                     ),
-                                    // Add Button
                                     Card(
                                       surfaceTintColor: Colors.red,
                                       color: Colors.green.shade500,
@@ -118,8 +116,8 @@ class ExploreItemScreen extends StatelessWidget {
                     );
                   },
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
