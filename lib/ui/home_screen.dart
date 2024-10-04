@@ -25,7 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Icon(
               CupertinoIcons.location_solid,
             ),
-            Text(' Dhaka, Banassre',),
+            Text(
+              ' Dhaka, Banassre',
+            ),
           ],
         ),
       ),
@@ -36,6 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               SearchTextField(
                 textEditingController: TextEditingController(),
+                hintText: 'Search Store',
               ),
               const SizedBox(height: 16),
               const GroceriesImageSlider(),
@@ -68,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               const SizedBox(
-                height: 220,
+                height: 250,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -125,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height:8),
+              const SizedBox(height: 8),
               const SizedBox(
                 height: 220,
                 child: SingleChildScrollView(

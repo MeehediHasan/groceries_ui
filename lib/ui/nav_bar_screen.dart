@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:groceries/ui/explore_item_screen.dart';
 import 'package:groceries/ui/home_screen.dart';
 
 import 'cart_screen.dart';
@@ -14,7 +15,7 @@ class _NavBarScreenState extends State<NavBarScreen> {
   // List of screens
   final List<Widget> listOfScreen = [
     const HomeScreen(),
-    const HomeScreen(),
+    const ExploreItemScreen(),
     const CartScreen(),  // Cart Screen at index 2
     const HomeScreen(),
   ];
